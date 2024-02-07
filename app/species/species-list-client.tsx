@@ -1,4 +1,4 @@
-"use client";
+/*"use client";
 // species-list-client.tsx
 import { Separator } from "@/components/ui/separator";
 import { TypographyH2 } from "@/components/ui/typography";
@@ -56,3 +56,4 @@ export default function SpeciesListClient({
     </>
   );
 }
+*/
