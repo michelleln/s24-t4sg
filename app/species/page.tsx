@@ -19,5 +19,5 @@ export default async function SpeciesList() {
 
   const { data: species } = await supabase.from("species").select("*").order("id", { ascending: false });
 
-  return <SpeciesListClient initialSpecies={species} sessionID={sessionId} />;
+  return <SpeciesListClient initialSpecies={species ?? []} sessionID={sessionId} />;
 }
