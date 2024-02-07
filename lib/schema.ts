@@ -41,6 +41,7 @@ export interface Database {
           kingdom: Database["public"]["Enums"]["kingdom"];
           scientific_name: string;
           total_population: number | null;
+          endangered?: boolean | null;
         };
         Insert: {
           author: string;
@@ -62,6 +63,7 @@ export interface Database {
           kingdom?: Database["public"]["Enums"]["kingdom"];
           scientific_name?: string;
           total_population?: number | null;
+          endangered?: boolean | null;
         };
         Relationships: [
           {
