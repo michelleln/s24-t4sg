@@ -24,6 +24,7 @@ const kingdoms = z.enum(["Animalia", "Plantae", "Fungi", "Protista", "Archaea", 
 
 // Use Zod to define the shape + requirements of a Species entry; used in form validation
 const speciesSchema = z.object({
+  author: z.string(),
   scientific_name: z
     .string()
     .trim()
