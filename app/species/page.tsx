@@ -1,4 +1,3 @@
-// species/page.tsx
 import { createServerSupabaseClient } from "@/lib/server-utils";
 import { redirect } from "next/navigation";
 import SpeciesListClient from "./species-list-client";
