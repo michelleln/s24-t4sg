@@ -27,7 +27,7 @@ export default function SpeciesListClient({
   };
 
   useEffect(() => {
-    const sortedSpecies = [...initialSpecies].sort((speciesA, speciesB) => {
+    const sortedSpecies = initialSpecies.sort((speciesA, speciesB) => {
       const scientificNameA = speciesA.scientific_name.toLowerCase();
       const scientificNameB = speciesB.scientific_name.toLowerCase();
       const comparisonResult = scientificNameA.localeCompare(scientificNameB);
