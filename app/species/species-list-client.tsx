@@ -1,12 +1,19 @@
-// species-list-client.tsx
 "use client";
 import { Separator } from "@/components/ui/separator";
 import { TypographyH2 } from "@/components/ui/typography";
+import type { Database } from "@/lib/schema";
 import { useEffect, useState } from "react";
 import AddSpeciesDialog from "./add-species-dialog";
 import SpeciesCard from "./species-card";
+type Species = Database["public"]["Tables"]["species"]["Row"];
 
-export default function SpeciesListClient({ initialSpecies, sessionID }) {
+export default function SpeciesListClient({
+  initialSpecies,
+  sessionID,
+}: {
+  initialSpecies: Species[];
+  sessionID: string;
+}) {
   const [species, setSpecies] = useState(initialSpecies);
   const [sortOrder, setSortOrder] = useState("asc");
 
